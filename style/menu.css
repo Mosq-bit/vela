@@ -4,11 +4,12 @@
 }
 
 .menuButton {
-    z-index: 2;
+    z-index: 5;
     cursor: pointer;
 }
 
 .dropdown-content {
+    z-index: 6;
     display: none;
     position: relative;
     padding-top: 30px;
