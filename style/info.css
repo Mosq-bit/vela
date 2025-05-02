@@ -22,7 +22,7 @@
 
 /* Стили для поиска */
 .search-container {
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 4;
     background: var(--white);
@@ -73,14 +73,14 @@
 
 /* Логотип и языковой переключатель */
 .logo {
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 4;
     background: var(--white);
 }
 
 .language-switcher {
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 4;
     background: var(--white);
@@ -106,7 +106,7 @@
 
 /* Карточки */
 .cards {
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 4;
     background: var(--white);
