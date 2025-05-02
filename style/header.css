@@ -1,0 +1,133 @@
+/* ===== Header Section ===== */
+.header__section {
+    padding: 8px 0;
+    background-color: var(--white-2);
+}
+
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.header__info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.header__info-card,
+.header__info-tel {
+    display: flex;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.header__info-card p {
+    color: var(--black);
+    transition: all .4s ease-in;
+}
+
+.header__info-card p:hover {
+    color: var(--blue);
+}
+
+.header__info-tel a {
+    color: var(--black);
+    transition: all .4s ease-in;
+}
+
+.header__info-tel p:hover {
+    color: var(--blue);
+}
+
+.working-hours {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* nav */
+.header__nav-list {
+    display: flex;
+    gap: min(16px, 4vw);
+    flex-wrap: wrap;
+}
+
+.header__nav-link {
+    font-weight: 500;
+    white-space: nowrap;
+    color: var(--black);
+    transition: all .4s ease-in;
+}
+
+.header__nav-link:hover {
+    color: var(--blue);
+}
+
+.header__nav-link:focus-visible {
+    outline: 2px solid var(--black);
+}
+
+/* Адаптивные стили */
+@media (max-width: 992px) {
+    .header__wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .header__info {
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    .header__nav-list {
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__info {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .header__nav-list {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 10px;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .header__nav-link {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__info-card,
+    .header__info-tel {
+        font-size: 13px;
+    }
+    
+    .working-hours {
+        font-size: 13px;
+    }
+    
+    .header__nav-list {
+        gap: 8px;
+    }
+    
+    .header__nav-link {
+        font-size: 12px;
+    }
+}

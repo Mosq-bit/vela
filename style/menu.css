@@ -1,0 +1,207 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.menuButton {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    padding-top: 30px;
+    top: -30px;
+    left: 106px;
+    background-color: var(--white);
+    width: 890px;
+    box-shadow: 0 0 10px 0 rgba(157, 157, 157, 0.35);
+    border-radius: 8px;
+    z-index: 1;
+    overflow-y: auto;
+    cursor: pointer;
+}
+
+.dropdown-content--link {
+    padding: 14px 95px 23px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 80px;
+}
+
+.drop__content-name--wrapper {
+    width: 100%;
+    max-width: 338px;
+}
+
+.drop__content-name {
+    padding: 14px 13px 16px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    transition: all .4s ease-in;
+    font-size: 16px;
+    color: var(--black);
+}
+
+.drop__content-name:hover {
+    background-color: var(--white-2);
+}
+
+.smartphones,
+.gadjet {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.smartphones,
+.gadjet h2 {
+    font-size: 30px;
+}
+
+.smartphones {
+    flex-grow: 2;
+}
+
+.content__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 16px;
+}
+
+.content__list span {
+    font-size: 14px;
+    color: rgba(52, 58, 63, 0.5);
+}
+
+.content__list-link {
+    transition: all .4s ease-in;
+}
+
+.content__list-link:hover,
+.content__list-link:hover span {
+    color: var(--blue);
+}
+
+.dropdown-content--link a {
+    color: var(--black);
+}
+
+.link-icon {
+    margin: 0 16px 0 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    display: none;
+}
+
+.active {
+    background-color: #ddd;
+    font-weight: bold;
+}
+
+.content.active {
+    display: block;
+}
+
+/* Адаптивные стили */
+@media (max-width: 1200px) {
+    .dropdown-content {
+        width: 700px;
+        left: 80px;
+    }
+    
+    .dropdown-content--link {
+        gap: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .dropdown-content {
+        width: 500px;
+        left: 60px;
+    }
+    
+    .smartphones,
+    .gadjet h2 {
+        font-size: 24px;
+    }
+    
+    .content__list {
+        font-size: 14px;
+    }
+    
+    .content__list span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dropdown-content {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        padding-top: 60px;
+        overflow-y: auto;
+    }
+    
+    .dropdown-content--link {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+    
+    .drop__content-name--wrapper {
+        max-width: 100%;
+    }
+    
+    .smartphones,
+    .gadjet {
+        gap: 20px;
+    }
+    
+    .smartphones,
+    .gadjet h2 {
+        font-size: 20px;
+    }
+    
+    .drop__content-name {
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .content {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .dropdown-content {
+        padding-top: 50px;
+    }
+    
+    .dropdown-content--link {
+        padding: 15px;
+    }
+    
+    .content__list {
+        gap: 10px;
+    }
+    
+    .link-icon {
+        margin-right: 10px;
+    }
+}

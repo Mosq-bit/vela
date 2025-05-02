@@ -1,0 +1,33 @@
+:root {
+    --black: #343a3f;
+
+    --white-2: #f4f4f4;
+    --white: #fff;
+    
+
+    --blue: #4888ff;
+
+
+
+
+
+
+    
+        --font-family: "Maza", sans-serif;
+        --second-family: "Tenor Sans", sans-serif;
+
+
+
+
+
+}
+
+@media (max-width:1200px) {
+    
+}
+@media (max-width:992px) {
+    
+}
+@media (max-width:768px) {
+    
+}
