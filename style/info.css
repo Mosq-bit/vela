@@ -24,7 +24,7 @@
 .search-container {
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 4;
     background: var(--white);
     display: flex;
     justify-content: space-between;
@@ -75,14 +75,14 @@
 .logo {
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 4;
     background: var(--white);
 }
 
 .language-switcher {
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 4;
     background: var(--white);
     margin-top: 12px;
     display: flex;
@@ -108,7 +108,7 @@
 .cards {
     position: sticky;
     top: 0;
-    z-index: 100;
+    z-index: 4;
     background: var(--white);
     display: flex;
     gap: 16px;
