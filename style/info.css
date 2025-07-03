@@ -68,7 +68,8 @@
 }
 
 .search-button:hover {
-    background-color: var(--blue-dark);
+    background-color: #F3F3F3;
+    color:var(--blue);
 }
 
 /* Логотип и языковой переключатель */
